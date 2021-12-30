@@ -1,6 +1,6 @@
 {
     "plugins":[
-     "testin-library",
+     "testing-library",
      "jest-dom"   
     ],
     "extends":[
