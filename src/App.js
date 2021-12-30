@@ -15,14 +15,19 @@ function App() {
           setNextColor(nextColor === "blue" ? "red" : "blue");
         }}
         style={{
-          backgroundColor: buttonColor,
+          backgroundColor: isCheck ? "gray" : buttonColor,
           marginTop: "30px",
           marginLeft: "650px",
         }}
       >
         Change to {nextColor}
       </button>
-      <input onChange={(e) => setIsCheck(e.target.checked)} type="checkbox" />
+      <input
+        id="disabled-checkbox"
+        onChange={(e) => setIsCheck(e.target.checked)}
+        type="checkbox"/>
+        <label htmlFor="disabled-checkbox">disable button</label>
+      
     </div>
   );
 }
